@@ -20,9 +20,6 @@ found = 0
 while found==0: 
 
     for pincode in pincodes:   
-#        for given_date in actual_dates:
-#            if (datetime.strptime(given_date,"%d-%m-%Y") < datetime.strptime("26-05-2021","%d-%m-%Y")):
-#                pass
             actual = datetime.today().strftime("%d-%m-%Y")
             try:
                 URL = "https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByPin?pincode={}&date={}".format(pincode, actual)
