@@ -14,8 +14,6 @@ print("Starting search for Covid vaccine slots!")
 
 actual = datetime.today().strftime("%d-%m-%Y")
 valid_date = datetime.strptime("29-05-2021","%d-%m-%Y")
-#list_format = [actual + timedelta(days=i) for i in range(num_days)]
-#actual_dates = [i.strftime("%d-%m-%Y") for i in list_format]
 found = 0
 while found==0: 
 
